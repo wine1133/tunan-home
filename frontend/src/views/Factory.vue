@@ -111,7 +111,7 @@
             <p>{{ s.d }}</p>
           </div>
         </div>
-        <a href="/contact/" class="btn btn-primary">预约到厂参观</a>
+        <a href="contact.html" class="btn btn-primary">预约到厂参观</a>
       </div>
     </section>
   </div>

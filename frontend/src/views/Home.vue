@@ -68,13 +68,13 @@
             <span class="eyebrow">产品系列</span>
             <h2 class="section-title">覆盖全屋空间的一站式方案</h2>
           </div>
-          <a href="/products/" class="btn btn-line">查看全部</a>
+          <a href="products.html" class="btn btn-line">查看全部</a>
         </div>
         <div class="series-grid">
           <a
             v-for="c in categories"
             :key="c.name"
-            href="/products/"
+            href="products.html"
             class="series-card"
           >
             <div class="series-img" :style="bg(c.img, 'rgba(20,16,12,0.25)')">
@@ -103,7 +103,7 @@
             <li><span>03</span>整装出货前 32 道质检工序</li>
             <li><span>04</span>支持小批量与 OEM / ODM 合作</li>
           </ul>
-          <a href="/factory/" class="btn btn-primary">了解工厂实力</a>
+          <a href="factory.html" class="btn btn-primary">了解工厂实力</a>
         </div>
       </div>
     </section>
@@ -118,7 +118,7 @@
             无论是小户型的收纳难题，还是别墅大宅的整体配套，我们都能提供从测量、
             设计到生产安装的一站式定制服务。
           </p>
-          <a href="/custom/" class="btn btn-ghost">了解定制流程</a>
+          <a href="custom.html" class="btn btn-ghost">了解定制流程</a>
         </div>
         <div class="custom-steps">
           <div class="step" v-for="(s, i) in steps" :key="i">
@@ -169,7 +169,7 @@
             <div class="news-date">{{ n.date }}</div>
             <h3>{{ n.t }}</h3>
             <p>{{ n.d }}</p>
-            <a href="/contact/" class="news-more">了解更多 →</a>
+            <a href="contact.html" class="news-more">了解更多 →</a>
           </article>
         </div>
       </div>
@@ -190,7 +190,7 @@
       <div class="container cta-inner">
         <h2>把您理想中的家，交给我们来实现</h2>
         <p>全国热线 400-888-1988，专业顾问一对一为您服务</p>
-        <a href="/contact/" class="btn btn-primary">立即联系</a>
+        <a href="contact.html" class="btn btn-primary">立即联系</a>
       </div>
     </section>
   </div>
@@ -211,32 +211,32 @@ const slides = [
     eyebrow: '源自工厂 · 直供万家',
     title: '好家居，从源头开始',
     sub: '自有厂房、自有产线，砍掉层层中间商，让每一件实木家具都经得起岁月与审美的双重推敲。',
-    btnText: '浏览产品', btnLink: '/products/',
-    ghostText: '预约工厂参观', ghostLink: '/factory/',
+    btnText: '浏览产品', btnLink: 'products.html',
+    ghostText: '预约工厂参观', ghostLink: 'factory.html',
   },
   {
     img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1800&q=80',
     eyebrow: '全屋实木定制',
     title: '一件家具，一室温度',
     sub: '从测量、设计到生产安装，一对一定制，把家的每一寸都安排得刚刚好。',
-    btnText: '了解定制', btnLink: '/custom/',
-    ghostText: '查看产品', ghostLink: '/products/',
+    btnText: '了解定制', btnLink: 'custom.html',
+    ghostText: '查看产品', ghostLink: 'products.html',
   },
   {
     img: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1800&q=80',
     eyebrow: '十八年匠心制造',
     title: '把每一寸木纹做到极致',
     sub: '北美进口硬木、榫卯结构、水性环保漆，品质经得起时间与使用的检验。',
-    btnText: '走进工厂', btnLink: '/factory/',
-    ghostText: '联系我们', ghostLink: '/contact/',
+    btnText: '走进工厂', btnLink: 'factory.html',
+    ghostText: '联系我们', ghostLink: 'contact.html',
   },
   {
     img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=80',
     eyebrow: '源头工厂 · 直供万家',
     title: '高端轻奢，从源头开始',
     sub: '省去中间环节，让高品质家居回归实在价格，全国发货、上门安装。',
-    btnText: '立即咨询', btnLink: '/contact/',
-    ghostText: '浏览产品', ghostLink: '/products/',
+    btnText: '立即咨询', btnLink: 'contact.html',
+    ghostText: '浏览产品', ghostLink: 'products.html',
   },
 ]
 

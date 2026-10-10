@@ -34,7 +34,7 @@
               <p class="desc">{{ p.desc }}</p>
               <div class="price-row">
                 <span class="price">{{ p.price }}</span>
-                <a href="/contact/" class="more">咨询底价 →</a>
+                <a href="contact.html" class="more">咨询底价 →</a>
               </div>
             </div>
           </article>
@@ -55,7 +55,7 @@
               <p class="items">{{ r.items }}</p>
               <div class="roomset-bottom">
                 <span class="rprice">{{ r.price }}</span>
-                <a href="/contact/" class="more">咨询 →</a>
+                <a href="contact.html" class="more">咨询 →</a>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
       <div class="container cta-inner">
         <h2>没有看到心仪的款式？</h2>
         <p>我们支持来图定制，一个想法也能变成实木成品</p>
-        <a href="/custom/" class="btn btn-primary">了解定制服务</a>
+        <a href="custom.html" class="btn btn-primary">了解定制服务</a>
       </div>
     </section>
   </div>

@@ -6,16 +6,19 @@ const open = ref(false)
 const current = ref('/')
 
 const links = [
-  { path: '/', label: '首页' },
-  { path: '/products/', label: '产品' },
-  { path: '/factory/', label: '工厂' },
-  { path: '/custom/', label: '定制' },
-  { path: '/contact/', label: '联系' },
+  { path: 'index.html', label: '首页' },
+  { path: 'products.html', label: '产品' },
+  { path: 'factory.html', label: '工厂' },
+  { path: 'custom.html', label: '定制' },
+  { path: 'contact.html', label: '联系' },
 ]
 
 const isActive = (path) => {
-  if (path === '/') return current.value === '/'
-  return current.value.startsWith(path)
+  const p = current.value.replace(/\/+$/, '')
+  if (path === 'index.html') {
+    return p === '' || p.endsWith('/') || p.endsWith('index.html')
+  }
+  return p.endsWith(path)
 }
 
 const onScroll = () => { scrolled.value = window.scrollY > 40 }
@@ -31,7 +34,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 <template>
   <header class="nav" :class="{ scrolled: scrolled || open }">
     <div class="nav-inner container">
-      <a href="/" class="brand" @click="open = false">
+      <a href="index.html" class="brand" @click="open = false">
         <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
           <rect width="64" height="64" fill="#b28a5a"/>
           <rect x="6" y="6" width="52" height="52" fill="none" stroke="#ffffff" stroke-opacity="0.38" stroke-width="1.5"/>

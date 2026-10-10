@@ -18,11 +18,11 @@
 
       <div class="f-col">
         <h4>快速导航</h4>
-        <a href="/">首页</a>
-        <a href="/products/">产品</a>
-        <a href="/factory/">工厂</a>
-        <a href="/custom/">定制</a>
-        <a href="/contact/">联系</a>
+        <a href="index.html">首页</a>
+        <a href="products.html">产品</a>
+        <a href="factory.html">工厂</a>
+        <a href="custom.html">定制</a>
+        <a href="contact.html">联系</a>
       </div>
 
       <div class="f-col">

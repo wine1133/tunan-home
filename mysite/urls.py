@@ -16,7 +16,10 @@ urlpatterns = [
     path("products/", TemplateView.as_view(template_name="products.html")),
     path("factory/", TemplateView.as_view(template_name="factory.html")),
     path("custom/", TemplateView.as_view(template_name="custom.html")),
-    path("contact/", TemplateView.as_view(template_name="contact.html")),
+    path("contact/", TemplateView.as_view(template_name="contact.html")),    path("products.html", TemplateView.as_view(template_name="products.html")),
+    path("factory.html", TemplateView.as_view(template_name="factory.html")),
+    path("custom.html", TemplateView.as_view(template_name="custom.html")),
+    path("contact.html", TemplateView.as_view(template_name="contact.html")),
     # 兜底：其余路径回首页
     re_path(r"^.*$", TemplateView.as_view(template_name="index.html")),
 ]

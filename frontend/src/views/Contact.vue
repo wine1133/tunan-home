@@ -179,7 +179,7 @@ const submit = async () => {
   submitting.value = true
   errorMsg.value = ''
   try {
-    await axios.post('/api/contract/', {
+    await axios.post((import.meta.env.VITE_API_BASE || '') + '/api/contract/', {
       contact: form.name,
       phone: form.phone,
       company: form.company,

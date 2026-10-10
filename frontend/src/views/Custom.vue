@@ -115,7 +115,7 @@
       <div class="container cta-inner">
         <h2>开启您的专属定制</h2>
         <p>拨打 400-888-1988 或留下联系方式，顾问将在 1 小时内回复</p>
-        <a href="/contact/" class="btn btn-primary">立即咨询</a>
+        <a href="contact.html" class="btn btn-primary">立即咨询</a>
       </div>
     </section>
   </div>
